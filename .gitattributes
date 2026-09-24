@@ -1,0 +1,11 @@
+*.bin binary
+*.usm binary
+*.png binary
+*.zip binary
+content/ui-colors/map_exe.txt -text -diff
+*.ps1 text eol=crlf
+*.cmd text eol=crlf
+*.md text eol=lf
+*.py text eol=lf
+*.json text eol=lf
+*.svg text eol=lf

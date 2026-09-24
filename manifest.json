@@ -1,0 +1,349 @@
+{
+  "schema": 1,
+  "version": "1.0.0",
+  "files": [
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/gamePlan.bin",
+      "sha256": "0e8b1a9f91d960be507c841d596e67d860b51dab781dc273244f8fc6212b645f",
+      "size": 1799697
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/managerHistory.bin",
+      "sha256": "b7930b7886b98481d6c71044ff4a77573c48f948bae85f238a5acb7cacf04da2",
+      "size": 32706
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/matchMenuSettingList.bin",
+      "sha256": "6f37d2dda519817a4a64075da15bf620530687bf6e941ed48d4d054e2bbe3a78",
+      "size": 20540
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/matchMenuStadium.bin",
+      "sha256": "df65c8e13b8336ca26bb8eb950c16bd3490978685545c9a9e4f9ebfa35e5037e",
+      "size": 16419
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/matchMenuUniform.bin",
+      "sha256": "7be45aa3b4e9dd28dc3dada7e0c4228b61fc6f51300fad9c2a852772ddad801c",
+      "size": 12860
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/modeMainMenuCompeLicence.bin",
+      "sha256": "c35a0ac6afbdf3aa13f763b3599180c339174c398a2c8c05c4d3a7769a634a11",
+      "size": 8797
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/modeMainMenuNetRankSeason.bin",
+      "sha256": "d432565aa43ac314543d484db4f58880f3a770030efaa4e3ac22459183e23b59",
+      "size": 17876
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/modeStartType_tex/modeStartTypeMl_0.bin",
+      "sha256": "7547f00c9663da1f253cb6c098223bac82836078ed3951641386c664ac67c90c",
+      "size": 285544
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/modeStartType_tex/modeStartTypeMl_1.bin",
+      "sha256": "9febc71981ed9bdacb9b308f53aa166cfacd6b2e2af7089d776944a74f9bcaa4",
+      "size": 285695
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/negotiation.bin",
+      "sha256": "c77cd97a5fa9fd4de8d5223d34e923008ed3d6d23de5fede33c79e078904f643",
+      "size": 80878
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/negotiationMenu.bin",
+      "sha256": "6924d8608905761caf7e17806cc6390aee7864259180143bae58276e600666af",
+      "size": 126679
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/pauseMenu.bin",
+      "sha256": "53432555c23e36359c00874a56a04143462cfc1436b309a521ce1eee7a1beb98",
+      "size": 330349
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerList.bin",
+      "sha256": "6398364f03613a10ef460378d80c0de9c7bc2ace05efd0cd2767da1a4fdbb76d",
+      "size": 199372
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerListDMM.bin",
+      "sha256": "89261ba307e5503531e26c56b3dc3e047121552e1e3646680fcdf935e4eacba8",
+      "size": 32406
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerListInfoGraph.bin",
+      "sha256": "394ff613585fab7482f49e08ca9da444c4f2f082a5029bef6cbb2b83f98aadfe",
+      "size": 15823
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerListInfoRole.bin",
+      "sha256": "f5026cadde95a0e8356664bb0af707f91ac9a79b2664c74887c499b3c494c2c6",
+      "size": 21738
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerLotteryEffect.bin",
+      "sha256": "ee7c6582b9fc64a15a071f8310b4fa9028dbb6863a96787a2bbea8ee98d79f46",
+      "size": 9659
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerLotteryResult.bin",
+      "sha256": "4dcdefa715ca7fd9e1111589cc94fde4e77af80eb88b14a8f78c72321bc15898",
+      "size": 13784
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerTrade.bin",
+      "sha256": "f746ed6f1a34475d316913306d9cd264f486688dccaf2ce89c971c1101d17a30",
+      "size": 39694
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/playerTradeDialog.bin",
+      "sha256": "54268bd7915d7f9516ea5d3ff3a00be1517ad6630f2181d8ca03ed8d93c8a628",
+      "size": 421444
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/positionSelectPlayer.bin",
+      "sha256": "8df6a8ec80cd9a2567f0890b70867b3260a8d05609990e510fa9eee46a80e0ce",
+      "size": 2329
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/schedule.bin",
+      "sha256": "b601cd4be7772c95540d7cd87b86e1162c7e4b94a3dcf778adbd59da79e7df69",
+      "size": 80220
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/scheduleProceed.bin",
+      "sha256": "74a58bf908544c128b83fcbcf2a402527b478fd6e7c9bbe5477126041a5f1ee0",
+      "size": 121747
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/sideSelect.bin",
+      "sha256": "8aae59d773cc1aea43d4d73c9be8791a29f219baab8042a327987e9ca9d63a7f",
+      "size": 48972
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/teamReport.bin",
+      "sha256": "8568a22de2af1326208df54aef3b5fc33e53469445411acfca01cc42c8664375",
+      "size": 516766
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/teamTacticalComparision.bin",
+      "sha256": "550d97b10e3eaf157046c5f60c018022957e6d0cf9e6bf174d1d583795c4ae60",
+      "size": 485525
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/titlePressStart_tex/titlePressStart_pes.bin",
+      "sha256": "e045bb1cebaf11a2b5ff250303d0818a2f33b1d540f4b3360c9a58e18ba25b4e",
+      "size": 2707643
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/topModeSelectDMM.bin",
+      "sha256": "d9cb4487fd82548fe0667d30a47ec6a4ed1a73da745544e052666ef8837974fe",
+      "size": 15722255
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/topModeSelectDMMBg_0_tex.bin",
+      "sha256": "ae07f1adc1217f573351e6bb623db71bada5b473c4bd8cf938cbfb5794aa755b",
+      "size": 628150
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/tournament.bin",
+      "sha256": "90e8bb1478914bf56e8d2b79e267b9d3c1eb1cadc94a944f733fa7721191dba1",
+      "size": 39388
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/usePlayerSelect.bin",
+      "sha256": "47fad55770bef6f7adb2ba5ea24d1baefae88150e61e923fb47d80309754fbb7",
+      "size": 48138
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/general/weeklyView.bin",
+      "sha256": "10b311059e845f77b6a6002438f1bf7f53cffad60d61f986aa723005767cb87b",
+      "size": 53545
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/coopMatchMainMenu.bin",
+      "sha256": "acb61cb3a763f3f30600e55555b9e7526626c079fc6986e8079cbb7a06881bb9",
+      "size": 32485
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/eFootballPointExchange.bin",
+      "sha256": "7c75885332efbdbae4c616fc72e047527fecd69091b800302ad7c14b7bb9d170",
+      "size": 32972
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/keyConfig.bin",
+      "sha256": "bb4d6abbfb1d8a34ea72326a85d8b45037959d1e011f3ce6e79071bf88f820de",
+      "size": 369694
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/latestAuctionResults.bin",
+      "sha256": "d1fb24b864d24e1f8be6355b64ada642277b1dc0525abb9cbe31abd2db28de2d",
+      "size": 15456
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/loginBonus.bin",
+      "sha256": "f6d93be6514c89d58aa6bd7832e9b53da9fc2fae8b4d90da49568e1cf8b2b9bd",
+      "size": 19938
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/pdMatchRanking.bin",
+      "sha256": "24752dd1dd2eaebaa4d98b27c952ef88ddd7cbfde3f35dd3ad1c6f20fd9bbdf1",
+      "size": 34676
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/pdMatchResult.bin",
+      "sha256": "7d8214998a3a4018cf4f538477b640341e3ccb3d467bb9417cb812df24b3421c",
+      "size": 25663
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/sideMatchMembers.bin",
+      "sha256": "03aa7b2c7ff00354d0ecae0d8183357c789488eb963c7071176fa46f93a7deba",
+      "size": 43262
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/trainingMainMenu.bin",
+      "sha256": "1900fded07b54c27076356bd9bbee804f9410d71ed98dcdb9ec9ed86ba76b33a",
+      "size": 54617
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/mode/trainingResults.bin",
+      "sha256": "1be12a8d5ab4f6958b58d71713f2994945e1e5ac6dcd0a257c9ae339a73601a5",
+      "size": 534175
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/parts/cmnCircleGraph.bin",
+      "sha256": "54b51ffd3484f3e0f8565e050a8e480e6368d3cdbcfadfda30dc35e27ee5c152",
+      "size": 16382
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/parts/cmnIconNewLarge.bin",
+      "sha256": "6dc74af61d0f0f76a43e7f5ca8938968c38fad082504d6389cc4f006156d6476",
+      "size": 10375
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/parts/cmnTeamSelect.bin",
+      "sha256": "404c8d2255283fc3a485a82d85cddfe0808d4978e47c484f48426e4d1624e98c",
+      "size": 23616
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/parts/playerGraph.bin",
+      "sha256": "b2835bd3af5222301c796abefea32e49b84c47ecf381a308b057973a7d9fb47e",
+      "size": 28201
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnPartsComposite.bin",
+      "sha256": "c837ae12d0a9e8d8b2d992d9e47216b5f27da91a4347b3822b456d08b0ff0901",
+      "size": 53219
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnPlate.bin",
+      "sha256": "8d1f1da770ec312b8924727d7868a3a66a09b95c2393fb4c7cf6fee7ad79c190",
+      "size": 25921
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnTextInputDialog.bin",
+      "sha256": "e2af04cde7dfe5629eab3520104b5b0695e94c3c8da29b8b3d98e08b440eaf39",
+      "size": 14042
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnTexture.bin",
+      "sha256": "86fdd454f6479de14db9f9a2796612493049d703bcc660e2de9ee30887af6f10",
+      "size": 202983
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnTextureAcl.bin",
+      "sha256": "d3b2ac1ae885a0d8ab96bab26949b92fa118f6817baf4419ebae2d60e529a1e5",
+      "size": 6972
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnTextureEuro.bin",
+      "sha256": "7d542655502dc2c3d9a8a5d354119cb1a02ef1463c673d010fa91f22f30c44e8",
+      "size": 6340
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnTexturePes.bin",
+      "sha256": "741e8e6933e2d7cb0409f9b27c37b805e8ba7616c36e1f8676e35b94e32ffe76",
+      "size": 1999
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBgAnime.bin",
+      "sha256": "55a9cf249e00eb961eb247f5e6be1d97229bf693762d4a158debd6816dd60c3c",
+      "size": 492062
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgAclMainMenu.bin",
+      "sha256": "22507b0d2184e13ea111ca1ba9055183cf74b82614d5cac3f0258d4175907cd3",
+      "size": 1134263
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgAclMenu.bin",
+      "sha256": "98caf4ce408206e93a00a8056569baaba1305715cabe99b51d4d50da68d3c86f",
+      "size": 1134257
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgCrossfade_0.bin",
+      "sha256": "4ec542290c209ce18beaad000b74b5144ad48520a58a05c71a8eca2ecbb73969",
+      "size": 846709
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgCrossfade_1.bin",
+      "sha256": "91dab17f36b6c6ea7a17813a31bf1722811a3fabb051216fd053822d09cd8250",
+      "size": 846710
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgCrossfade_2.bin",
+      "sha256": "f36566b82119987ab45e824f6535114d1c054560673e98613b6ad519cf0c8ad9",
+      "size": 846710
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgCrossfade_3.bin",
+      "sha256": "97984d729469f71fd1721ffdda0dbf29fd0218d67771ea83cb94b322071603f9",
+      "size": 846710
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgEuroMenu.bin",
+      "sha256": "5e2fd908967723a28c09948b1be1527918d262d7eec2cdffff7ae07787c1ea6e",
+      "size": 863066
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgIccMenu.bin",
+      "sha256": "24f83d5d3417495b7495c833d6e444b12c101db2cdb56f11e7a5c4292bf50447",
+      "size": 952264
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/system/systemBg_tex/systemBgMlFavoritePlayers.bin",
+      "sha256": "9546f16a037dc032bc5714d7d1f871b3a617b746c5be5a9742ee80fe09889e7b",
+      "size": 846718
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/eng/menu/system/cmnIcon.bin",
+      "sha256": "8663da39e4b899db57e528dfc49a1239ba586c1a84457b256c6a65bf1d3df862",
+      "size": 85174
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/eng/string/all.str",
+      "sha256": "93f58557dc19bff5f3cdc80511d580b2ab5becb02355088cea2ff67b90f4c72c",
+      "size": 473973
+    },
+    {
+      "path": "livecpk/TouchlinePrologue2/movie/intro/FL2026.usm",
+      "sha256": "7dcfb1becbd6220e4cc49028e45862a24cc424a8e6955de6bc1967076c2a771d",
+      "size": 16094560
+    },
+    {
+      "path": "content/ui-colors/map_exe.txt",
+      "sha256": "619cc101752a1d2a60c31737df7c8891a3d25e821ea6005cb94d1052a4e196d8",
+      "size": 2798
+    }
+  ],
+  "retired": [
+    {
+      "path": "livecpk/TouchlinePrologue2/common/menu/parts/teamPower.bin",
+      "known_sha256": [
+        "b7c852bb76e48eb33511989fd229daa181bc28935dcb7045bd187cfc49011cea"
+      ]
+    }
+  ]
+}

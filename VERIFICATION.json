@@ -1,0 +1,21 @@
+{
+  "version": "1.0.0",
+  "game_asset_count": 66,
+  "palette_file_count": 1,
+  "asset_hashes_match_current_installation": true,
+  "schedule_and_text_input_from_current_working_installation": true,
+  "obsolete_teamPower_override_excluded": true,
+  "information_background_base": "#040B12",
+  "save_files_or_local_sider_configuration_included": false,
+  "runtime_scope": "Author-reviewed Football Life 2026 setup; other game versions and all competition/mod combinations are not verified.",
+  "installer_tests": {
+    "passed": 5,
+    "cases": [
+      "fresh install and exact restoration",
+      "upgrade and original-file recovery",
+      "later user edits protected during restore",
+      "unknown retired override protected",
+      "corrupt package rejected before installation"
+    ]
+  }
+}

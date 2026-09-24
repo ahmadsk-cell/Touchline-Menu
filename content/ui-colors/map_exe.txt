@@ -1,0 +1,92 @@
+# PES 2021 ui text colors changer by Zlac, 2024-
+# research credits: SoulBallZ, milos987, jovic1901, afandix, hyun93222
+# line format:
+# 	color_index (from 1 to 80), color_value
+# 		color_value: hexadecimal RGBA representation - 8 characters, RRGGBBAA
+# Touchline Prologue: warm ivory text on charcoal panels 
+# you can change any line
+#	legitimate color_index values are from 1 to 80!!
+#	e.g. to set color with index 5 to pure red, add '5, FF0000' (without quotation marks) as new line
+#	do not repeat identical color_index in multiple lines
+# DO NOT USE ; or any character other than # to comment lines in this file!
+
+1, E6E8E5FF   # Dark Text (Almost Everywhere)
+2, FFFFFFFF   # Sub Title (Gameplan, Standings, Select Team, Overall Rating)
+3, C3A46CFF   
+4, EF5B0CFF   
+5, C3A46CFF   
+6, C3A46CFF   
+7, C3A46CFF   
+8, C3A46CFF   
+9, FFFFFFFF   
+10, FFFFFFFF   # Sub Title (Player Info, Manager Info, League Info)
+11, C3A46CFF   
+12, C3A46CFF   
+13, C3A46CFF   
+14, C3A46CFF   
+15, C3A46CFF   
+16, C3A46CFF   
+17, FFFFFFFF   
+18, E6E8E5FF   # ML - Team Role Effect (Basic Effect, Special Effect), Budget Report (Budget Names), Transfer Market News (Player Names)
+19, C3A46CFF   
+20, C3A46CFF   
+21, C3A46CFF   
+22, C3A46CFF   
+23, C3A46CFF   
+24, C3A46CFF   
+25, E6E8E5FF   
+26, FFFFFFFF   # Player Info (Inspire), Team Negotiations
+27, C3A46CFF   
+28, C3A46CFF   
+29, C3A46CFF   
+30, C3A46CFF   
+31, C3A46CFF   
+32, C3A46CFF   
+33, FFFFFFFF   
+34, E6E8E5FF   # Popup (Competition Names)
+35, C3A46CFF   
+36, C3A46CFF   
+37, C3A46CFF   
+38, CC4747FF   
+39, CB435CFF   
+40, BB641AFF   
+41, E6E8E5FF   
+42, A6ADADFF   
+43, FFFFFFFF   # White Text (Almost Everywhere)
+44, E6E8E5FF   # Gameplan (Selected Player Name, Number and Ability Hexagon), League (Unselected Menu Text)
+45, 761E25FF   
+46, E6E8E5FF   # Popup (Unselected Text)
+47, C3A46CFF   
+48, AEFF00FF   
+49, FFB000FF   
+50, FF3B30FF   
+51, E59F01FF   
+52, D33D35FF   
+53, FFFFFFFF   
+54, 82828250   
+55, C3A46CFF   
+56, C3A46CFF   
+57, C3A46CFF   
+58, C3A46CFF   
+59, C3A46CFF   
+60, FF0000FF   
+61, FFFF00FF   
+62, FFFFFFFF   
+63, 00FF00FF   
+64, 0000FFFF   
+65, FF00FFFF   
+66, C3A46CFF   
+67, E6E8E5FF   
+68, FFBF00FF   
+69, 8C3A00FF   
+70, C3A46CFF   
+71, 007FFFFF   
+72, 3C96F5FF   
+73, D21E1EFF   
+74, A6ADADFF   # ML - Standings, Followers, Offical Partners, Stadium and Date, News Content, Negotiations Sub Text, Messages Sub Text
+75, C3A46CFF   # Green Text (Tournament Draw Results)
+76, C3A46CFF   
+77, FFFFFFFF   # Music Player (Artist and Song Name), Sub Info
+78, C3A46CFF   # Green Text Selection Colour
+79, C3A46CFF   # Green Text Selection Colour (AFC Champions League)
+80, C3A46C66   # Text Outline Colour (Controller Button Info)
