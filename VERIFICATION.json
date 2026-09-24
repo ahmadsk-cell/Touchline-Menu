@@ -1,12 +1,12 @@
 {
-  "version": "1.1.4",
+  "version": "1.1.5",
   "game_asset_count": 155,
   "bundled_runtime_and_config_count": 3,
   "effective_asset_snapshot_matches_author_installation": true,
   "external_menu_packs_required": [],
   "schedule_and_text_input_preserved": true,
   "obsolete_teamPower_override_excluded": true,
-  "runtime_scope": "Dark Management Career panel states verified by decoding. Icon pixels, alpha and native metadata unchanged; in-game confirmation requires restart.",
+  "runtime_scope": "Only two career icon region records changed. All texture pixels, dark panels, actions and animations are unchanged. Restart required for in-game confirmation.",
   "installer_tests": {
     "passed": 5,
     "clean_sider_without_external_packs": true,
@@ -111,5 +111,21 @@
       }
     ],
     "runtime": "Decoded panel states checked; in-game confirmation requires restart."
+  },
+  "career_icon_mapping_correction": {
+    "version": "1.1.5",
+    "only_two_icon_region_records_changed": true,
+    "all_texture_pixels_unchanged": true,
+    "dark_panels_preserved": true,
+    "native_actions_and_animations_unchanged": true,
+    "files": [
+      {
+        "path": "common/menu/general/managerHistory.bin",
+        "live_override_existed": true,
+        "before_sha256": "45f21e944005a7b236f35602006bc9c61a45540e57ddafa69c9af1be4ed656bb",
+        "after_sha256": "fd00fffe55da17770dd4f7a4421a944916af565e294b027ff6806c13497a11f9"
+      }
+    ],
+    "runtime": "Icon mapping verified; restart required for in-game confirmation."
   }
 }

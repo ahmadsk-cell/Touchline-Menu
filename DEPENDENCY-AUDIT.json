@@ -119,8 +119,8 @@
     {
       "path": "common/menu/general/managerHistory.bin",
       "source_pack": "TouchlinePrologue2",
-      "sha256": "45f21e944005a7b236f35602006bc9c61a45540e57ddafa69c9af1be4ed656bb",
-      "revision": "1.1.4: dark selected and unselected Management Career panels; 1.1.3 icons retained"
+      "sha256": "fd00fffe55da17770dd4f7a4421a944916af565e294b027ff6806c13497a11f9",
+      "revision": "1.1.5: swapped Manager Offers and Results and Squad List region mappings; dark panels retained"
     },
     {
       "path": "common/menu/general/matchMenu.bin",

@@ -15,7 +15,7 @@
   },
   {
     "path": "common/menu/general/managerHistory.bin",
-    "region": "managerHistory-icon-2",
+    "region": "managerHistory-icon-3",
     "texture": 0,
     "box": [
       708,
@@ -43,7 +43,7 @@
   },
   {
     "path": "common/menu/general/managerHistory.bin",
-    "region": "managerHistory-icon-3",
+    "region": "managerHistory-icon-2",
     "texture": 0,
     "box": [
       824,

@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.5
+
+- Swapped the Manager Offers and Results and Squad List icons to their correct menu entries.
+- Preserved the dark Management Career panels and original icon quality.
+
 ## 1.1.4
 
 - Fixed the remaining white Management Career panels: dark normal state and charcoal selected state.
