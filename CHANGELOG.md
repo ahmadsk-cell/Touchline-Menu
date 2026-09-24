@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.1
+
+- Smaller download: the release ZIP now carries only what installs, uninstalls and explains the theme.
+- Artwork masters and prompts, README screenshots, tests and the packaging tool remain in the repository.
+- Theme files are unchanged from 1.1.0.
+
 ## 1.1.0
 
 - Standalone distribution: Football Life and Sider are the only runtime requirements.

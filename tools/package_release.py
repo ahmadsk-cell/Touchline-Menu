@@ -14,7 +14,9 @@ for entry in manifest['files']:
     files.append(p)
 for name in ['README.md','CREDITS.md','CHANGELOG.md','Install.cmd','Install.ps1','Uninstall.ps1','manifest.json','VERIFICATION.json','DEPENDENCY-AUDIT.json']:
     files.append(ROOT/name)
-for folder in ['scripts','docs/images','artwork','tools','tests']:
+# Only what installs or explains the theme. Artwork masters, prompts, README
+# screenshots, tests and this tool stay in the repository.
+for folder in ['scripts']:
     files.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)
 assert len(files)==len(set(files))
 dist=ROOT/'dist';dist.mkdir(exist_ok=True)

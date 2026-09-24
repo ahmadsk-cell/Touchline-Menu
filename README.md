@@ -2,7 +2,7 @@
 
 A standalone charcoal, silver and champagne menu mod for **SP Football Life 2026**, with Touchline / Prologue branding, portrait main-menu scenes and quiet `#040B12` information screens. No separate menu pack or UIColors installation is required.
 
-**[Download the latest release](https://github.com/ahmadsk-cell/Touchline-Menu/releases/latest)** · [Installation](#installation) · [Credits](CREDITS.md)
+**[Download the latest release](https://askandalus.com/downloads/menu/latest)** · [Installation](#installation) · [Credits](CREDITS.md)
 
 ![Touchline main-menu scene](docs/images/main-menu.png)
 
@@ -32,7 +32,7 @@ Touchline and Prologue gameplay/story systems are separate projects. Their names
 ## Installation
 
 1. Close Football Life and Sider.
-2. Download **Touchline-Menu-v1.1.0.zip** from the release page and extract it completely.
+2. Download **Touchline-Menu-v1.1.1.zip** from [askandalus.com/downloads/menu](https://askandalus.com/downloads/menu) and extract it completely.
 3. Double-click **Install.cmd** and enter the full path to your **SiderAddons** folder, the folder containing `sider.ini`.
 4. Start Sider and Football Life again.
 
