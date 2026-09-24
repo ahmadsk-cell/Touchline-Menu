@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.2
+
+- Swapped the MyClub and Gallery icons across all seven main-menu scenes.
+- Preserved menu actions, backgrounds, labels and all other theme assets.
+
 ## 1.1.1
 
 - Smaller download: the release ZIP now carries only what installs, uninstalls and explains the theme.

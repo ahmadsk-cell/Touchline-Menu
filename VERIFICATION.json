@@ -1,12 +1,12 @@
 {
-  "version": "1.1.1",
+  "version": "1.1.2",
   "game_asset_count": 155,
   "bundled_runtime_and_config_count": 3,
   "effective_asset_snapshot_matches_author_installation": true,
   "external_menu_packs_required": [],
   "schedule_and_text_input_preserved": true,
   "obsolete_teamPower_override_excluded": true,
-  "runtime_scope": "Merged assets match the author-reviewed layered installation; standalone game runtime requires a fresh launch for confirmation.",
+  "runtime_scope": "Native metadata and unrelated assets preserved; updated main-menu artwork verified after decoding. In-game icon confirmation requires restart.",
   "installer_tests": {
     "passed": 5,
     "clean_sider_without_external_packs": true,
@@ -19,5 +19,17 @@
     "mock_memory_only": true,
     "palette_initialization_and_reload_exact": true,
     "commonlib_or_external_menu_mods_needed": false
+  },
+  "main_menu_icon_swap": {
+    "version": "1.1.2",
+    "path": "common/menu/general/topModeSelectDMM.bin",
+    "before_sha256": "d9cb4487fd82548fe0667d30a47ec6a4ed1a73da745544e052666ef8837974fe",
+    "after_sha256": "3d75b5d44b6e8826da0f8a6fda696b9a0217667bb112cdbce552fcee965331b9",
+    "scene_count": 7,
+    "changed_icon_regions": 14,
+    "changes_limited_to_myclub_gallery_icons": true,
+    "all_native_metadata_byte_exact": true,
+    "roundtrip_pixel_exact": true,
+    "runtime": "Requires restart and in-game visual confirmation."
   }
 }
