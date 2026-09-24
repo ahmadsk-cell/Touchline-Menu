@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.4
+
+- Fixed the remaining white Management Career panels: dark normal state and charcoal selected state.
+- Preserved all six career/offer icons and native menu behavior.
+
 ## 1.1.3
 
 - Added supplied icons for Past Glories, Favorite Players, Manager Offers, Results and Squad List, Club Teams and National Teams.
