@@ -119,7 +119,8 @@
     {
       "path": "common/menu/general/managerHistory.bin",
       "source_pack": "TouchlinePrologue2",
-      "sha256": "b7930b7886b98481d6c71044ff4a77573c48f948bae85f238a5acb7cacf04da2"
+      "sha256": "0c62a5bc8b84ea3d07ff9884bfad513dd7a92232d69e589a1b844d6c53ca38d6",
+      "revision": "1.1.3: supplied career and manager-offer icons"
     },
     {
       "path": "common/menu/general/matchMenu.bin",
@@ -319,7 +320,8 @@
     {
       "path": "common/menu/general/offerList.bin",
       "source_pack": "MenuC1987",
-      "sha256": "ea23571bb441238a5ab25ebab6e77904bfbd1658e890be988f27b0b23712016c"
+      "sha256": "8e580b534faee4d7d35c792cea55f1c7b0d742859a5ebbdbb88803dd4e46d775",
+      "revision": "1.1.3: supplied career and manager-offer icons"
     },
     {
       "path": "common/menu/general/pauseMenu.bin",

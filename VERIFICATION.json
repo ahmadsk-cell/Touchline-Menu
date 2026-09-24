@@ -1,12 +1,12 @@
 {
-  "version": "1.1.2",
+  "version": "1.1.3",
   "game_asset_count": 155,
   "bundled_runtime_and_config_count": 3,
   "effective_asset_snapshot_matches_author_installation": true,
   "external_menu_packs_required": [],
   "schedule_and_text_input_preserved": true,
   "obsolete_teamPower_override_excluded": true,
-  "runtime_scope": "Native metadata and unrelated assets preserved; updated main-menu artwork verified after decoding. In-game icon confirmation requires restart.",
+  "runtime_scope": "Updated career/offer icons verified by decoding and pixel comparison; selected icon tint preserves supplied artwork. Native structure and unrelated assets preserved. In-game confirmation requires restart.",
   "installer_tests": {
     "passed": 5,
     "clean_sider_without_external_packs": true,
@@ -31,5 +31,48 @@
     "all_native_metadata_byte_exact": true,
     "roundtrip_pixel_exact": true,
     "runtime": "Requires restart and in-game visual confirmation."
+  },
+  "career_icons": {
+    "version": "1.1.3",
+    "icons": 6,
+    "files": [
+      {
+        "path": "common/menu/general/managerHistory.bin",
+        "live_override_existed": true,
+        "before_sha256": "b7930b7886b98481d6c71044ff4a77573c48f948bae85f238a5acb7cacf04da2",
+        "after_sha256": "0c62a5bc8b84ea3d07ff9884bfad513dd7a92232d69e589a1b844d6c53ca38d6",
+        "tint_fields": [
+          {
+            "field": "multiply",
+            "offset": 10836,
+            "frame": "frame_0"
+          },
+          {
+            "field": "multiply",
+            "offset": 10932,
+            "frame": "frame_3"
+          },
+          {
+            "field": "add",
+            "offset": 10936,
+            "frame": "frame_3"
+          }
+        ],
+        "outside_icon_regions_pixel_exact": true,
+        "native_structure_preserved": true,
+        "roundtrip_pixel_exact": true
+      },
+      {
+        "path": "common/menu/general/offerList.bin",
+        "live_override_existed": false,
+        "before_sha256": "ea23571bb441238a5ab25ebab6e77904bfbd1658e890be988f27b0b23712016c",
+        "after_sha256": "8e580b534faee4d7d35c792cea55f1c7b0d742859a5ebbdbb88803dd4e46d775",
+        "tint_fields": [],
+        "outside_icon_regions_pixel_exact": true,
+        "native_structure_preserved": true,
+        "roundtrip_pixel_exact": true
+      }
+    ],
+    "runtime": "Decoded previews checked; in-game confirmation requires restart."
   }
 }

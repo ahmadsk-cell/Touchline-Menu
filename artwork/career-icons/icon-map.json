@@ -1,0 +1,86 @@
+[
+  {
+    "path": "common/menu/general/managerHistory.bin",
+    "region": "managerHistory-icon-0",
+    "texture": 0,
+    "box": [
+      708,
+      0,
+      822,
+      114
+    ],
+    "label": "past-glories",
+    "source": "past-glories.png",
+    "source_sha256": "a9fe8e6f8989edc819e3c44c890ad52e0c99bb4a6abe25b994bf7e9450940cd3"
+  },
+  {
+    "path": "common/menu/general/managerHistory.bin",
+    "region": "managerHistory-icon-2",
+    "texture": 0,
+    "box": [
+      708,
+      116,
+      822,
+      230
+    ],
+    "label": "manager-offers",
+    "source": "manager-offers.png",
+    "source_sha256": "ce2d2dffa4df35c2bb68c4406cf10c84436fd9cfaa5eef548c831263a0ff0e26"
+  },
+  {
+    "path": "common/menu/general/managerHistory.bin",
+    "region": "managerHistory-icon-1",
+    "texture": 0,
+    "box": [
+      824,
+      0,
+      938,
+      114
+    ],
+    "label": "favorite-players",
+    "source": "favorite-players.png",
+    "source_sha256": "9302e528df593e6d86d49563b40297d8fce991b633de28142f1b193e07c9d2d4"
+  },
+  {
+    "path": "common/menu/general/managerHistory.bin",
+    "region": "managerHistory-icon-3",
+    "texture": 0,
+    "box": [
+      824,
+      116,
+      938,
+      230
+    ],
+    "label": "results-squad-list",
+    "source": "results-squad-list.png",
+    "source_sha256": "3aeb0ae54fa5a5ccaa4ab1c3dc6db6f76d52dba5931f9178cf810d37457ad7ae"
+  },
+  {
+    "path": "common/menu/general/offerList.bin",
+    "region": "offerList-icon-1",
+    "texture": 0,
+    "box": [
+      0,
+      0,
+      75,
+      75
+    ],
+    "label": "club-teams",
+    "source": "club-teams.png",
+    "source_sha256": "ffd49662576de9f5a7158db8cd93e2bfd399e3ed6283fbb8be76401bcc677aff"
+  },
+  {
+    "path": "common/menu/general/offerList.bin",
+    "region": "offerList-icon-0",
+    "texture": 0,
+    "box": [
+      75,
+      0,
+      150,
+      75
+    ],
+    "label": "national-teams",
+    "source": "national-teams.png",
+    "source_sha256": "a9cd5b767a5664dc2a11f8d8e51f685b1ea602fe6949df6c0a8bf79a0fa9e7ec"
+  }
+]

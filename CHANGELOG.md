@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.3
+
+- Added supplied icons for Past Glories, Favorite Players, Manager Offers, Results and Squad List, Club Teams and National Teams.
+- Preserved the metallic artwork when a career menu tile is selected.
+- Replaced the old teal category icons on the Manager Offers page.
+
 ## 1.1.2
 
 - Swapped the MyClub and Gallery icons across all seven main-menu scenes.

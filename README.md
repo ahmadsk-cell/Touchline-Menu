@@ -32,7 +32,7 @@ Touchline and Prologue gameplay/story systems are separate projects. Their names
 ## Installation
 
 1. Close Football Life and Sider.
-2. Download **Touchline-Menu-v1.1.2.zip** from [askandalus.com/downloads/menu](https://askandalus.com/downloads/menu) and extract it completely.
+2. Download **Touchline-Menu-v1.1.3.zip** from [askandalus.com/downloads/menu](https://askandalus.com/downloads/menu) and extract it completely.
 3. Double-click **Install.cmd** and enter the full path to your **SiderAddons** folder, the folder containing `sider.ini`.
 4. Start Sider and Football Life again.
 
