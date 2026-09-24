@@ -1,6 +1,6 @@
 # Touchline Menu
 
-A charcoal, silver and champagne menu theme for **SP Football Life 2026**, with Touchline / Prologue branding, portrait main-menu scenes and quiet `#040B12` information screens.
+A standalone charcoal, silver and champagne menu mod for **SP Football Life 2026**, with Touchline / Prologue branding, portrait main-menu scenes and quiet `#040B12` information screens. No separate menu pack or UIColors installation is required.
 
 **[Download the latest release](https://github.com/ahmadsk-cell/Touchline-Menu/releases/latest)** · [Installation](#installation) · [Credits](CREDITS.md)
 
@@ -22,22 +22,19 @@ A charcoal, silver and champagne menu theme for **SP Football Life 2026**, with 
 
 ## Requirements
 
-- Windows with **SP Football Life 2026**, Sider and LiveCPK enabled.
-- **MenuC1987** installed and enabled as the underlying menu pack.
-- **UIColors by Zlac** installed, with its LiveCPK root and `UIColors.lua` enabled.
+- Windows with **SP Football Life 2026** and Sider, with LiveCPK and Lua enabled.
 - English game text. This package includes an English string-table override.
 
-This is an overlay for that setup. It does not bundle Football Life, PES, Sider, MenuC1987 or UIColors. It uses PES 2021-format assets, but other PES/Football Life versions have not been validated. The FL 2027 wordmark is artwork; the tested game is Football Life 2026.
+All required theme files, fonts, secondary menu assets and the color component are included. Football Life and Sider themselves are not bundled. It uses PES 2021-format assets, but other PES/Football Life versions have not been validated. The FL 2027 wordmark is artwork; the tested game is Football Life 2026.
 
 Touchline and Prologue gameplay/story systems are separate projects. Their names appear in the menu artwork; this download installs the visual theme and intro only.
 
 ## Installation
 
 1. Close Football Life and Sider.
-2. Download **Touchline-Menu-v1.0.0.zip** from the release page and extract it completely.
-3. Confirm MenuC1987 and UIColors are already installed and working.
-4. Double-click **Install.cmd** and enter the full path to your **SiderAddons** folder, the folder containing `sider.ini`.
-5. Start Sider and Football Life again.
+2. Download **Touchline-Menu-v1.1.0.zip** from the release page and extract it completely.
+3. Double-click **Install.cmd** and enter the full path to your **SiderAddons** folder, the folder containing `sider.ini`.
+4. Start Sider and Football Life again.
 
 Alternatively, from PowerShell in the extracted package:
 
@@ -47,7 +44,9 @@ powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\Install.ps1 -SiderDir 
 
 Replace the example path with your installation. Administrator privileges are normally unnecessary if you can write to that folder.
 
-The installer verifies the package, backs up affected files, places `TouchlinePrologue2` first in LiveCPK order, installs the theme and applies its UIColors text palette. It preserves unrelated Sider settings, mods and save files. Keep MenuC1987 and UIColors enabled underneath the theme.
+The installer verifies the package, backs up affected files, enables the single `TouchlinePrologue2` LiveCPK root and the bundled `TouchlineMenuColors.lua` component. Its palette is isolated in `content/touchline-menu`.
+
+When upgrading an existing setup, the installer comments out the old MenuC1987, UIColors and TouchlinePrologue roots and the separate `UIColors.lua` module to avoid duplicate menu/palette loading. Their files remain on disk, and uninstall restores the original settings. Other Sider settings, mods and saves are preserved.
 
 Earlier development versions used the same `TouchlinePrologue2` folder. The installer backs them up and removes the obsolete `teamPower.bin` override only when its hash matches a known development copy. An independently edited copy is left for you to resolve.
 
@@ -63,17 +62,17 @@ This restores overwritten files and settings and removes files created by that i
 
 ## Compatibility and troubleshooting
 
-- **No visual changes:** restart both Sider and the game; confirm the theme root is above MenuC1987 and UIColors in `sider.ini`.
+- **No visual changes:** restart both Sider and the game; confirm `TouchlinePrologue2` and `TouchlineMenuColors.lua` are enabled, with LiveCPK and Lua enabled.
 - **Schedule or a text-entry screen is blank:** use this complete release, not an older development ZIP. If another mod overrides the same files, check LiveCPK priority. Report the game version and active menu mods with a screenshot.
 - **Different icons during a licensed competition:** the premium Game Plan set targets the default menu. Competitions can provide their own menu layouts and icons.
-- **Other menu mods:** they may override these files or the UIColors palette. The installer backs up existing theme files and palette settings; it does not merge conflicting layouts.
+- **Other menu mods:** they can override the same files or runtime colors. Use one default menu theme at a time. The installer backs up existing theme files and settings; it does not merge other menu layouts.
 - The intro overrides `movie/intro/FL2026.usm`. Competition-specific intro movies remain controlled by the existing setup.
 
-The author has reviewed the current theme in Football Life. Packaging checks cover asset hashes, the repaired live files, archive integrity, and installer/restore behavior. Every game mode, competition and third-party mod combination has not been tested.
+The assets match the author's reviewed theme in Football Life, including the repaired Schedule and typing dialog. The standalone installer is checked in a clean Sider fixture without external menu packs. The bundled color component is checked against simulated game memory. A full game session with this consolidated release and every competition/mod combination has not been verified.
 
 ## Repository and packaging
 
-The repository includes the ready-to-install assets, portable scripts, preview images, five high-resolution Game Plan icon masters, and the editable information-background SVG. The release ZIP is the easiest download for players.
+The repository includes 155 ready-to-install game assets, the bundled color component and its configuration, portable scripts, previews, five high-resolution Game Plan icon masters and the editable information-background SVG. The release ZIP is the easiest download for players. `DEPENDENCY-AUDIT.json` records the sources of the consolidated files.
 
 To verify and package the checked-in release using Python 3:
 

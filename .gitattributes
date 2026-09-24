@@ -3,7 +3,8 @@
 *.str binary
 *.png binary
 *.zip binary
-content/ui-colors/map_exe.txt -text -diff
+content/touchline-menu/* -text -diff
+modules/TouchlineMenuColors.lua -text whitespace=-blank-at-eol,-blank-at-eof
 *.ps1 text eol=crlf
 *.cmd text eol=crlf
 *.md text eol=lf

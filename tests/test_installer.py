@@ -18,10 +18,7 @@ def ps(script,*args):
 class InstallerTests(unittest.TestCase):
     def setUp(self):
         self.game=RUN/self._testMethodName/'SiderAddons'
-        for folder in ['livecpk/MenuC1987','livecpk/UIColors']:(self.game/folder).mkdir(parents=True)
-        put(self.game/'modules/UIColors.lua',b'-- fixture, not executed\n')
-        put(self.game/'sider.ini',b'[sider]\r\n; user settings\r\ncpk.root = ".\\livecpk\\MenuC1987"\r\ncpk.root = ".\\livecpk\\UIColors"\r\nlua.module = "UIColors.lua"\r\n')
-        put(self.game/'content/ui-colors/map_exe.txt',b'1, ABCDEFFF\r\n')
+        put(self.game/'sider.ini',b'[sider]\r\n; user settings\r\nlivecpk.enabled = 1\r\nlua.enabled = 1\r\n')
         put(self.game/'livecpk/Unrelated/example.bin',b'preserve this other mod')
 
     def install(self):
@@ -35,21 +32,31 @@ class InstallerTests(unittest.TestCase):
         before=snapshot(self.game);backup=self.install()
         for entry in MANIFEST['files']:self.assertEqual(sha(self.game/entry['path']),entry['sha256'])
         ini=(self.game/'sider.ini').read_text()
-        self.assertLess(ini.index('TouchlinePrologue2'),ini.index('MenuC1987'))
+        self.assertIn('cpk.root = ".\\livecpk\\TouchlinePrologue2"',ini)
+        self.assertIn('lua.module = "TouchlineMenuColors.lua"',ini)
+        self.assertFalse((self.game/'livecpk/MenuC1987').exists())
+        self.assertFalse((self.game/'modules/UIColors.lua').exists())
         result=self.restore(backup);self.assertEqual(result.returncode,0,result.stderr)
         self.assertEqual(snapshot(self.game),before)
 
     def test_upgrade_preserves_existing_files_in_backup(self):
         target=self.game/'livecpk/TouchlinePrologue2/common/menu/general/schedule.bin'
         put(target,b'previous working schedule')
-        ini=self.game/'sider.ini';put(ini,ini.read_bytes()+b'cpk.root = ".\\livecpk\\TouchlinePrologue2"\r\n')
+        put(self.game/'modules/UIColors.lua',b'-- user original module\n')
+        put(self.game/'content/ui-colors/map_exe.txt',b'original shared palette')
+        put(self.game/'livecpk/MenuC1987/preserve.bin',b'original pack')
+        put(self.game/'livecpk/UIColors/preserve.bin',b'original colors')
+        ini=self.game/'sider.ini';put(ini,ini.read_bytes()+b'cpk.root = ".\\livecpk\\TouchlinePrologue2"\r\ncpk.root = ".\\livecpk\\MenuC1987"\r\ncpk.root = ".\\livecpk\\UIColors"\r\nlua.module = "UIColors.lua"\r\n')
         before=snapshot(self.game);backup=self.install()
         self.assertEqual((self.game/'sider.ini').read_text().count('TouchlinePrologue2'),1)
+        active=[line for line in (self.game/'sider.ini').read_text().splitlines() if not line.lstrip().startswith(';')]
+        self.assertFalse(any('MenuC1987' in line or '"UIColors.lua"' in line or 'livecpk\\UIColors' in line for line in active))
+        self.assertEqual((self.game/'content/ui-colors/map_exe.txt').read_bytes(),b'original shared palette')
         result=self.restore(backup);self.assertEqual(result.returncode,0,result.stderr)
         self.assertEqual(snapshot(self.game),before)
 
     def test_restore_refuses_later_changes_without_partial_restore(self):
-        backup=self.install();put(self.game/'content/ui-colors/map_exe.txt',b'later user change')
+        backup=self.install();put(self.game/'content/touchline-menu/map_exe.txt',b'later user change')
         before=snapshot(self.game);result=self.restore(backup)
         self.assertNotEqual(result.returncode,0);self.assertIn('Changed since installation',result.stderr)
         self.assertEqual(snapshot(self.game),before)

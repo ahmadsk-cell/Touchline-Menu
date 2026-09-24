@@ -3,20 +3,17 @@ param([Parameter(Mandatory=$true)][string]$SiderDir)
 $root=[IO.Path]::GetFullPath($SiderDir)
 $iniPath=Get-ContainedPath $root 'sider.ini'
 if(!(Test-Path -LiteralPath $iniPath -PathType Leaf)){throw 'Select the SiderAddons folder containing sider.ini.'}
-foreach($required in @('livecpk\MenuC1987','livecpk\UIColors','modules\UIColors.lua')){
-    if(!(Test-Path -LiteralPath (Get-ContainedPath $root $required))){throw "Install the required MenuC1987 and UIColors mods first. Missing: $required"}
-}
 $encoding=[Text.Encoding]::GetEncoding(28591)
 $ini=$encoding.GetString([IO.File]::ReadAllBytes($iniPath))
-foreach($pattern in @('(?mi)^[ \t]*cpk\.root[ \t]*=[ \t]*"\.\\livecpk\\MenuC1987"','(?mi)^[ \t]*cpk\.root[ \t]*=[ \t]*"\.\\livecpk\\UIColors"','(?mi)^[ \t]*lua\.module[ \t]*=[ \t]*"UIColors\.lua"')){
-    if($ini -notmatch $pattern){throw 'Enable MenuC1987, UIColors LiveCPK and UIColors.lua in sider.ini before installing.'}
+foreach($setting in @('livecpk','lua')){
+    if($ini -match ('(?mi)^[ \t]*'+$setting+'\.enabled[ \t]*=[ \t]*0(?:[ \t;]|$)')){throw "Enable $setting in sider.ini before installing."}
 }
 $manifest=Get-Content -LiteralPath (Join-Path $PSScriptRoot 'manifest.json') -Raw | ConvertFrom-Json
 $changes=@();$seen=@{}
 # Validate the entire payload before changing anything in the target game.
 foreach($item in $manifest.files){
     if($seen.ContainsKey($item.path)){throw 'Duplicate manifest path'};$seen[$item.path]=$true
-    if($item.path -notmatch '^livecpk/TouchlinePrologue2/' -and $item.path -ne 'content/ui-colors/map_exe.txt'){throw 'Unexpected payload path'}
+    if($item.path -notmatch '^livecpk/TouchlinePrologue2/' -and $item.path -notin @('content/touchline-menu/map_exe.txt','content/touchline-menu/ui_bin_colors.ini','modules/TouchlineMenuColors.lua')){throw 'Unexpected payload path'}
     $source=Get-ContainedPath $PSScriptRoot $item.path
     $target=Get-ContainedPath $root $item.path
     if(!(Test-Path -LiteralPath $source -PathType Leaf) -or (Get-Sha $source) -ne $item.sha256){throw "Package checksum failed: $($item.path)"}
@@ -34,9 +31,17 @@ foreach($item in $manifest.retired){
 }
 $newline=if($ini.Contains("`r`n")){"`r`n"}else{"`n"}
 $clean=[regex]::Replace($ini,'(?mi)^[ \t]*cpk\.root[ \t]*=[ \t]*"\.\\livecpk\\TouchlinePrologue2"[^\r\n]*(\r?\n|$)','')
-$first=[regex]::Match($clean,'(?mi)^[ \t]*cpk\.root[ \t]*=')
-if(!$first.Success){throw 'No LiveCPK roots found in sider.ini.'}
-$updated=$clean.Insert($first.Index,'cpk.root = ".\livecpk\TouchlinePrologue2"'+$newline)
+$clean=[regex]::Replace($clean,'(?mi)^[ \t]*lua\.module[ \t]*=[ \t]*"TouchlineMenuColors\.lua"[^\r\n]*(\r?\n|$)','')
+# All required assets now live in the Touchline root. Disable the former
+# fallback packs and duplicate palette runtime, keeping their files on disk.
+$legacyRoots='(?mi)^[ \t]*cpk\.root[ \t]*=[ \t]*"\.\\livecpk\\(?:MenuC1987|UIColors|TouchlinePrologue)"[^\r\n]*'
+$clean=[regex]::Replace($clean,$legacyRoots,'; Disabled by Touchline standalone: $0')
+$clean=[regex]::Replace($clean,'(?mi)^[ \t]*lua\.module[ \t]*=[ \t]*"UIColors\.lua"[^\r\n]*','; Disabled by Touchline standalone: $0')
+$section=[regex]::Match($clean,'(?mi)^[ \t]*\[sider\][^\r\n]*(?:\r?\n|$)')
+if(!$section.Success){throw 'Missing [sider] section in sider.ini.'}
+$entries='cpk.root = ".\livecpk\TouchlinePrologue2"'+$newline+'lua.module = "TouchlineMenuColors.lua"'+$newline
+$prefix=if($section.Value -match '\n$'){''}else{$newline}
+$updated=$clean.Insert($section.Index+$section.Length,$prefix+$entries)
 $backup=Get-ContainedPath $root ('TouchlineMenu-backups\'+(Get-Date -Format 'yyyyMMdd-HHmmss-fff'))
 New-Item -ItemType Directory -Path $backup | Out-Null
 $newIni=Join-Path $backup 'sider.ini.installed'

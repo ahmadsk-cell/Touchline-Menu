@@ -12,7 +12,7 @@ for entry in manifest['files']:
     assert p.is_file() and hashlib.sha256(p.read_bytes()).hexdigest()==entry['sha256'],entry['path']
     assert p.stat().st_size==entry['size'],entry['path']
     files.append(p)
-for name in ['README.md','CREDITS.md','CHANGELOG.md','Install.cmd','Install.ps1','Uninstall.ps1','manifest.json','VERIFICATION.json']:
+for name in ['README.md','CREDITS.md','CHANGELOG.md','Install.cmd','Install.ps1','Uninstall.ps1','manifest.json','VERIFICATION.json','DEPENDENCY-AUDIT.json']:
     files.append(ROOT/name)
 for folder in ['scripts','docs/images','artwork','tools','tests']:
     files.extend(p for p in (ROOT/folder).rglob('*') if p.is_file() and '__pycache__' not in p.parts)

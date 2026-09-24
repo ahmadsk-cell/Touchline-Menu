@@ -1,21 +1,23 @@
 {
-  "version": "1.0.0",
-  "game_asset_count": 66,
-  "palette_file_count": 1,
-  "asset_hashes_match_current_installation": true,
-  "schedule_and_text_input_from_current_working_installation": true,
+  "version": "1.1.0",
+  "game_asset_count": 155,
+  "bundled_runtime_and_config_count": 3,
+  "effective_asset_snapshot_matches_author_installation": true,
+  "external_menu_packs_required": [],
+  "schedule_and_text_input_preserved": true,
   "obsolete_teamPower_override_excluded": true,
-  "information_background_base": "#040B12",
-  "save_files_or_local_sider_configuration_included": false,
-  "runtime_scope": "Author-reviewed Football Life 2026 setup; other game versions and all competition/mod combinations are not verified.",
+  "runtime_scope": "Merged assets match the author-reviewed layered installation; standalone game runtime requires a fresh launch for confirmation.",
   "installer_tests": {
     "passed": 5,
-    "cases": [
-      "fresh install and exact restoration",
-      "upgrade and original-file recovery",
-      "later user edits protected during restore",
-      "unknown retired override protected",
-      "corrupt package rejected before installation"
-    ]
+    "clean_sider_without_external_packs": true,
+    "legacy_entries_disabled_and_restore_verified": true,
+    "later_edits_and_unknown_overrides_protected": true,
+    "corrupt_download_rejected": true
+  },
+  "color_runtime_test": {
+    "engine": "LuaJIT 2.1",
+    "mock_memory_only": true,
+    "palette_initialization_and_reload_exact": true,
+    "commonlib_or_external_menu_mods_needed": false
   }
 }
