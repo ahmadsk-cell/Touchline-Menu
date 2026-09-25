@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "version": "1.1.5",
+  "version": "1.1.6",
   "files": [
     {
       "path": "livecpk/TouchlinePrologue2/common/menu/credit_tex/creditLogo_degidelic.bin",
@@ -664,8 +664,8 @@
     },
     {
       "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnPlate.bin",
-      "sha256": "8d1f1da770ec312b8924727d7868a3a66a09b95c2393fb4c7cf6fee7ad79c190",
-      "size": 25921
+      "sha256": "62ab223868f36a96b0c835d7d7833a7500b2fadaebffb3951b476841af18fffd",
+      "size": 25938
     },
     {
       "path": "livecpk/TouchlinePrologue2/common/menu/system/cmnTextInputDialog.bin",
