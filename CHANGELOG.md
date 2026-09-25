@@ -2,8 +2,9 @@
 
 ## 1.1.6
 
-- Recolored the Information window plate, including the light frame edges, to the theme's light charcoal `#292D2C`.
-- Left the ivory body text in place so the message stays readable on that plate.
+- Recolored the Information window fill to `#040B12`.
+- Recolored the white horizontal frame bars to champagne `#C3A46C`.
+- Set popup body text to the theme silver `#A6ADAD`.
 
 ## 1.1.5
 

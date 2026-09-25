@@ -55,7 +55,7 @@
 43, FFFFFFFF   # White Text (Almost Everywhere)
 44, E6E8E5FF   # Gameplan (Selected Player Name, Number and Ability Hexagon), League (Unselected Menu Text)
 45, 761E25FF   
-46, E6E8E5FF   # Popup (Unselected Text)
+46, A6ADADFF   # Popup (Unselected Text) — silver, same as message text
 47, C3A46CFF   
 48, AEFF00FF   
 49, FFB000FF   
