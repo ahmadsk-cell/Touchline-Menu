@@ -1,11 +1,5 @@
 # Changelog
 
-## 1.1.6
-
-- Recolored the Information window fill to `#040B12`.
-- Recolored the white horizontal frame bars to champagne `#C3A46C`.
-- Set popup body text to the theme silver `#A6ADAD`.
-
 ## 1.1.5
 
 - Swapped the Manager Offers and Results and Squad List icons to their correct menu entries.

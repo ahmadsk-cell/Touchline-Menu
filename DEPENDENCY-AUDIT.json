@@ -672,8 +672,7 @@
     {
       "path": "common/menu/system/cmnPlate.bin",
       "source_pack": "TouchlinePrologue2",
-      "sha256": "cd6681a302c0942c239f0382664122420c617cee83a4693218e2d4eb788460d9",
-      "revision": "1.1.6: information plate fill #040B12, horizontal frame bars #C3A46C"
+      "sha256": "8d1f1da770ec312b8924727d7868a3a66a09b95c2393fb4c7cf6fee7ad79c190"
     },
     {
       "path": "common/menu/system/cmnTextInputDialog.bin",
