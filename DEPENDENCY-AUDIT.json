@@ -672,7 +672,8 @@
     {
       "path": "common/menu/system/cmnPlate.bin",
       "source_pack": "TouchlinePrologue2",
-      "sha256": "8d1f1da770ec312b8924727d7868a3a66a09b95c2393fb4c7cf6fee7ad79c190"
+      "sha256": "9fccc47240c44d61eaa9b4f098462c5b6100e503abc726a7f841ca83cd1699a1",
+      "revision": "1.1.6: information popup and info-frame fills recolored to #040B12 so the light body text stays readable"
     },
     {
       "path": "common/menu/system/cmnTextInputDialog.bin",

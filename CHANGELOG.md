@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.6
+
+- Recolored the Information window plate from the leftover light fill to `#040B12`, matching the rest of the dark theme.
+- Left the light body text in place so the message is readable on that dark plate.
+
 ## 1.1.5
 
 - Swapped the Manager Offers and Results and Squad List icons to their correct menu entries.
