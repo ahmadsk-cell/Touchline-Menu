@@ -2,8 +2,8 @@
 
 ## 1.1.6
 
-- Recolored the Information window plate, including the light frame edges, to `#040B12`, matching the rest of the dark theme.
-- Left the light body text in place so the message is readable on that dark plate.
+- Recolored the Information window plate, including the light frame edges, to the theme's light charcoal `#292D2C`.
+- Left the ivory body text in place so the message stays readable on that plate.
 
 ## 1.1.5
 
