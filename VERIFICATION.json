@@ -1,12 +1,12 @@
 {
-  "version": "1.1.5",
+  "version": "1.1.6",
   "game_asset_count": 155,
   "bundled_runtime_and_config_count": 3,
   "effective_asset_snapshot_matches_author_installation": true,
   "external_menu_packs_required": [],
   "schedule_and_text_input_preserved": true,
   "obsolete_teamPower_override_excluded": true,
-  "runtime_scope": "Only two career icon region records changed. All texture pixels, dark panels, actions and animations are unchanged. Restart required for in-game confirmation.",
+  "runtime_scope": "Only the Staff Report panel textures and title tints changed. Banner art, actions and animations are unchanged. Restart required for in-game confirmation.",
   "installer_tests": {
     "passed": 5,
     "clean_sider_without_external_packs": true,
@@ -127,5 +127,28 @@
       }
     ],
     "runtime": "Icon mapping verified; restart required for in-game confirmation."
+  },
+  "staff_report_readability": {
+    "version": "1.1.6",
+    "panel": "#10171b",
+    "border_and_title": "#c3a46c",
+    "only_panel_texture_and_title_tint_changed": true,
+    "banner_texture_unchanged": true,
+    "native_actions_and_animations_unchanged": true,
+    "files": [
+      {
+        "path": "common/menu/general/staffReport.bin",
+        "live_override_existed": false,
+        "before_sha256": "e2127b6dbcd1232e8d8c63d75078f021fa1f0bf197f0721987d3a368562cfa96",
+        "after_sha256": "2b3252380c3272a0aa3cb4d9922ec98d1662354d6efbc920183e931f5760b63d"
+      },
+      {
+        "path": "common/menu/general/staffReportDialog.bin",
+        "live_override_existed": false,
+        "before_sha256": "6864561404c2af5c4df8286641299f43df6a2cb890e586bec6acb53aa3a3b7d7",
+        "after_sha256": "4c6621692b63f7f881f44662be125239986f304d318ae0c37ba9f798c9c17166"
+      }
+    ],
+    "runtime": "Decoded panels and title tint checked; restart required for in-game confirmation."
   }
 }

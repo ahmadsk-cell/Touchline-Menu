@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.6
+
+- Fixed the unreadable Master League Information popup and Staff Report screen: their pale lavender panels are now charcoal with champagne lines, so the ivory text shows.
+- Changed the lavender titles on both screens to champagne.
+
 ## 1.1.5
 
 - Swapped the Manager Offers and Results and Squad List icons to their correct menu entries.
